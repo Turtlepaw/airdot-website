@@ -12,7 +12,7 @@ const nextConfig = {
   swcMinify: true,
   async redirects() {
     return [
-      ...MultipleLinks("https://discord.com/", "/r")
+      ...MultipleLinks("https://discord.gg/Rgxv5M6sq9", "/discord", "/server", "/support"),
     ]
   }
 }

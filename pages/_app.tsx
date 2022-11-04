@@ -156,13 +156,12 @@ export interface WebsiteConfiguration {
 // ^ This is required
 // This is what'll appear on your website
 export const Configuration: WebsiteConfiguration = {
-  WebsiteURL: "https://example.com/",
-  Name: "Username",
-  Avatar: "/Avatar.svg",
-  DiscordTag: "#0000",
-  Description: "Hello, I'm an open-source personal website template!",
+  WebsiteURL: "https://airdot.vercel.app/",
+  Name: "Airdot",
+  Avatar: "/Airdot.svg",
+  Description: "We build great websites and Discord bots.",
   NavigationLinks: [{
-    URL: "mailto:username@mail.com",
+    URL: "mailto:airdot@trtle.xyz",
     Icon: "/Mail.svg"
   }, {
     Icon: "/DiscordOutlined.svg",
@@ -183,38 +182,23 @@ export const Configuration: WebsiteConfiguration = {
     Icon: "/Github.svg",
     URL: "/Github",
     Name: "Github"
-  }, {
-    Icon: "/Reddit.svg",
-    URL: "/Reddit",
-    Name: "Reddit"
-  }, {
-    Icon: "/YouTube.svg",
-    URL: "/Youtube",
-    Name: "YouTube"
   }],
   LinkStyle: LinkStyle.None,
   Sections: [{
-    Interactable: false,
-    Emoji: "🌿",
-    Title: "Stylish",
-    Description: "It looks good, on mobile, and on desktop."
+    Interactable: true,
+    Icon: "/ActivitiesBot.png",
+    Title: "Discord Activities",
+    IconRounded: TailwindRoundedSizes.Full,
+    Description: "Free activities for Discord.",
+    Link: "https://activities.trtle.app/"
   }, {
-    Interactable: false,
-    Emoji: "🕊️",
-    Title: "Social Icons Included",
-    Description: "We've included some social icons, like Reddit, Discord, and Twitter."
-  }, {
-    Interactable: false,
-    Emoji: "⚙️",
-    Title: "Easy to Configure",
-    Description: "With the configuration object, you can configure some features, and if you want to configure more, you can always edit the React code."
-  }],
-  Skills: [
-    Icons.CSS,
-    Icons.HTML,
-    Icons.React
-  ],
-  SkillStyle: SkillStyles.Block
+    Interactable: true,
+    IconRounded: TailwindRoundedSizes.Full,
+    Icon: "/dotnote.svg",
+    Title: "dotnotes",
+    Description: "The privacy-first noting app, just jot it down.",
+    Link: "https://dotnote.vercel.app/"
+  }]
 }
 
 
